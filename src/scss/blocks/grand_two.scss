@@ -1,0 +1,70 @@
+.grandtwo-two {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%;
+    padding-top: 15%;
+    min-height: 700px;
+    display: flex;
+    justify-content: flex-end;
+   
+    .grandtwo-box {
+        
+        max-width: 540px;
+        max-height: 371px;
+        opacity: 0.9;
+        background-color: #232323;
+        margin-right: 14%;
+
+        .grandtwo-wraper {
+            padding: 48px 35px;    
+        }
+
+        .grandtwo-box__caption {
+            font-family: 'Josefin Sans';
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            letter-spacing: 0.075em;
+            color: #e8e8e8;
+            padding-bottom: 25px;
+        }
+
+        .grandtwo-box__title {
+            font-family: 'Josefin Sans';
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding-bottom: 20px;
+        }
+
+        .grandtwo-box__text-text {
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #e8e8e8;
+            padding-bottom: 40px;
+        }
+
+        .grandtwo-box__button {
+            font-family: 'Aleo';
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.075em;
+            color: #ffffff;
+            background: linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 43%, rgba(84,116,253,1) 43%);
+            padding: 17px 60px;
+            transition: 1s;
+        }
+    }
+
+    .grandtwo-box__button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}

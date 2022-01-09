@@ -1,0 +1,114 @@
+
+.touristsey {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    height: 100vh;
+    background-color: rgba(22, 19, 13, 0.726);
+    width: 100%;
+    min-height: 731px; 
+
+    .touristsey-wraper {
+        padding-top: 9%;
+    }
+
+    .touristsey-wraper__title {
+        font-family: 'Aleo';
+        font-size: 36px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .touristsey-page {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin-left: 13%;
+        background-position-y: center;
+        background-size: cover;
+        background-repeat: no-repeat;  
+    }
+     
+    .touristsey-page__img {
+        width: 445px;
+        height: 284px;  
+    }
+
+    .touristsey-box {
+        width: 670px;
+        min-height: 284px;
+        background-color: #333333;
+        padding: 50px 60px 0;
+
+        &__subject {
+            font-family: 'Josefin Sans';
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fefefe;
+            padding-bottom: 37px;
+        }
+
+        &__text {
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            color: #e8e8e8;
+            font-weight: 300;
+            line-height: 26px;
+            height: 170px;  
+        }
+    } 
+}
+
+.footer {
+    max-width: 1770px;
+    min-height: 268px;
+    background-color: #232323;
+    padding-top: 9%;
+
+    .footer-box {
+        margin: 0 auto;  
+        width: 200px;   
+    }
+
+    &__titleh2 {
+        font-family: 'Josefin Sans';
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    &__titleh3 {
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    &__list {
+        display: flex;   
+    }
+
+    .fa{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        padding-left: 20px;
+    }
+}

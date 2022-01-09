@@ -1,0 +1,246 @@
+
+.header {
+    height: 100% ;
+    max-width: 1770px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bhromaon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 265px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+
+   &__title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding:6px 0 15px;
+    }
+
+    &__title2 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.20em;
+        color: #ffffff;
+        margin-bottom: 15px;
+        padding-bottom: 31px;   
+    }
+
+    &__box {
+        max-width: 650px;
+        background-color:#ffffff ;
+        margin-bottom: 7%; 
+    } 
+
+        &__form {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 60px;
+        }
+
+    &__input {
+        font-family: 'Josefin Sans', sans-serif;
+        background-color: #ffffff; 
+        text-align: center;
+        border: 2px solid #fff;
+        width: 500px;
+        font-size: 14px;
+        letter-spacing: 2px;
+
+        @include media('<=tablet', 'screen') {
+            width: 250px;
+            font-size: 10px;
+            height: 50px;
+        }
+        
+    }
+
+    &__btn {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+        width: 150px;
+        border: 2px solid #fff ; 
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        background-color:#5474fd;
+        transition: 1s;
+        
+        @include media('<=tablet', 'screen') {
+            width: 100px;
+            height: 60px;
+        }
+
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+    
+        }
+    }
+
+    &__span {
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        padding-right: 0 10px;
+    }
+    
+    .bhromaon-page{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 9%;
+       padding-top: 5px;
+      
+
+        &__subtitle {
+            font-family: 'Josefin Sans';
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+        }
+
+        &__link {
+            width: 15px;
+            height: 8px;
+            padding-bottom: 10px;
+        }
+    } 
+}
+
+.bhromaon__nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #5474fd;
+    width: 100%;
+    min-height: 80px;    
+}
+
+.bhromaon-nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px; 
+}
+
+.nav-nav__item {
+    font-family: 'Aleo';
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff; 
+}
+
+.bhromaon__nav{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.bhromaon-nav__logo-nav {
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: 1s;  
+}
+
+.bhromaon-nav__link {
+    margin-right: 25px;
+    transition: 1s;
+}
+
+a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+
+       
+    
+@media (max-width:767px) {
+    .heder-menu {
+        width: 300px;
+        text-align: center;
+        height: auto;
+        background: rgb(15, 38, 100);
+        color: #ccc;
+        padding: 10px;
+        display: none;
+        transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+        
+    }
+    .heder-menu.animate{
+       display: inline-block;
+    }
+    .containe {
+        position: absolute;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 250px;  
+    }
+    .bhromaon-nav__logo {
+        margin-right: 200px;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+    }
+
+    .heder-menu, .animate{
+        left: 0;
+    }
+    .bhromaon-nav__list {
+        display: block;
+        
+        
+    }
+    .bhromaon-nav__link {
+        margin: 0 10px 30px 10px;
+        
+    }
+    .header-menu .animate {
+       display: flex; 
+    }
+}
+

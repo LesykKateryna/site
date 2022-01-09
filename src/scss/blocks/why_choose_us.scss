@@ -1,0 +1,106 @@
+.section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {   
+    background-color: rgba(22, 19, 13, 0.726);
+    padding-bottom: 5%;
+}
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 600px;
+    align-items: center;
+    margin-left: 6%;
+}
+
+.container-text {
+    display: block;
+    max-width: 540px;
+    padding-top: 10%;
+   
+    
+    &__text {
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #e8e8e8;
+        padding-bottom: 30px;
+    }
+    
+
+    &__title {
+        font-family: 'Aleo';
+        font-size: 36px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 11%;     
+    }
+    
+    .container-btn {
+        padding-top: 14px;
+    }
+
+   .btn {
+        background: linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 43%, rgba(84,116,253,1) 43%);
+        padding: 16px 35px;
+        font-family: 'Aleo';
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.075em;
+        color: #ffffff;
+        transition: 1s;
+
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+}
+
+.container-img {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-top: 80px;
+            padding-right: 16%;
+
+            @include media('<=tablet', 'screen') {
+            padding-top: 6%;
+        }
+
+    &__imag-one {
+        display: flex;
+       padding-bottom: 5px;
+       max-width: 100%;
+    }
+
+    .container-img__imag-two {
+       margin-left: 35%;
+    }
+}
+
+.img {
+    width: 350px;
+    height: 220px;
+
+    @include media('<=tablet', 'screen') {
+        
+        width: 250px;
+        height: 80px;
+    }
+
+}
+
+
